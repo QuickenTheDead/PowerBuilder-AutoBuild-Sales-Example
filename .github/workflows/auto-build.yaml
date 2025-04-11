@@ -22,12 +22,12 @@ jobs:
           PowerBuilderUtilities.exe /s /f1"D:\a\PowerBuilder-AutoBuild-Sales-Example\PowerBuilder-AutoBuild-Sales-Example\PowerBuilderUtilities-setup.iss" 
           exit 0
         
-      - name: Set SYSTEMDRIVE (Not recommended)
+      - name: Verify Runtime Installed
         shell: cmd
         run: |  
           dir "C:\Program Files (x86)\Appeon\Common\PowerBuilder" 2>nul  || echo "Appeon folder not found."
         
-      - name: Set SYSTEMDRIVE (Not recommended)
+      - name: Verify Utilities Installed
         shell: cmd
         run: |  
           dir "C:\Program Files (x86)\Appeon\PowerBuilderUtilities 22.0" 2>nul  || echo "Appeon folder not found."    

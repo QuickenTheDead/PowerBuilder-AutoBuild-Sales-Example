@@ -40,5 +40,5 @@ jobs:
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: build-artifacts
-          path: ./salesdemo.exe
+          name: SalesDemoExe
+          path: salesdemo.exe
